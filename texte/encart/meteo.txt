@@ -1,0 +1,4 @@
+======================================================
+   Titre : la météo en direct
+======================================================
+<div id="c_6d43523ee6e165df4f1a5ab33c7e989d" class="alto"><h2 style="color: #000000; margin: 0 0 3px; padding: 2px; font: bold 13px/1.2 Verdana; text-align: center; width=100%"><a href="http://www.meteorama.fr/m%C3%A9t%C3%A9o-grenoble.html" style="color: #000000; text-decoration: none; font: bold 13px/1.2 Verdana;">Meteo Grenoble</a></h2><div id="w_6d43523ee6e165df4f1a5ab33c7e989d" class="alto" style="height:100%"></div></div><script type="text/javascript" src="http://www.meteorama.fr/widget/loader/6d43523ee6e165df4f1a5ab33c7e989d"></script>

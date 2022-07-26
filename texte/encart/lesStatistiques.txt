@@ -1,0 +1,5 @@
+======================================================
+   Titre : les statistiques
+======================================================
+Grâce à nos statistiques, vous avez un aperçu rapide du nombre de films proposés à la location dans notre cinémathèque.
+De nouvelles statistiques seront ajoutées prochainement afin que vous puissiez encore mieux cerner le contenu toujours grandissant de notre cinémathèque.

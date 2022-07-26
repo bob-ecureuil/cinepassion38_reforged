@@ -1,0 +1,53 @@
+/* ======================================================================================================
+ * feuille de style		: navigation.css
+ * objectif(s)			: gérer le css pour la barre de navigation
+ * auteur				: Thomas GRAULLE
+ * date de création		: 18/11/18
+ * date de création		: november 2018
+ * date de modification : 25/11/18	-> Create the navigation bar -- Thomas Graulle
+ * date	de modification : 'date' -> 'ce qui a été fait' -- qui l'a fait
+ * ======================================================================================================
+ */
+
+#number .currentNumberSection {
+    font-weight: bold;
+	text-decoration: underline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#number a {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#number a:hover {
+    font-weight: bold;
+}
+
+
+#navigation {
+    text-align: center;
+    background-color: rgba(78, 55, 60, 0.31);
+    border: solid 1px #150b0e;
+    padding-top: 5px;
+    margin-top: 5px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.numbers{
+	margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+#navigation .displayInline {
+	display: inline-block;
+}
+
+#navigation .displayBlock {
+	display: block;
+}
+

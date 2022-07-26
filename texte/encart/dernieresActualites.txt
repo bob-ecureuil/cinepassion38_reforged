@@ -1,0 +1,17 @@
+======================================================
+   Titre : dernières actualités
+======================================================
+#flux RSS
+La page d'accueil du site internet intègre désormais les dernières actualités du cinéma grâce à un flux <a onclick='window.open(this.href); return false;' href="http://fr.wikipedia.org/wiki/RSS">RSS</a> de notre partenaire <a onclick='window.open(this.href); return false;' href="http://www.premiere.fr/Cinema">premiere.fr</a>.
+
+#galerie photos
+Utilisation d'une galerie photos professionnelle (SlideJS) pour un effet visuel du plus bel effet.
+
+#charte graphique  
+Une nouvelle charte graphique a été élaborée. Le site arbore désormais un design plus épuré, plus soigné, avec des couleurs armonieuses pour une navigation plus agréable. 
+
+#notation des films
+Ajout d'un système de notation des films simple et intuitif à l'aide d'étoiles.
+
+#commentaires
+Désormais, chaque membre a la possibilité de commenter les différents films proposés.

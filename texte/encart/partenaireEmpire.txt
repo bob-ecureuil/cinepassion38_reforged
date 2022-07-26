@@ -1,0 +1,5 @@
+======================================================
+   Titre : <a onclick='window.open(this.href); return false;' href='http://www.empirecinemas.co.uk'><img src='./image/partenaire/logoEmpire.png' alt='empire' width='100%' /></a>
+======================================================
+Today, we’re the leading independently-owned cinema chain in the UK with 14 locations and 125 screens including our brilliant IMPACT and IMAX® screens.
+Empire’s enthusiastic and knowledgeable teams work hard to deliver a memorable cinema experience, supported by comfortable seating, crystal clear sound systems and the latest digital projection technology. Our investment in digital cinema helps our customers enjoy everything from the latest blockbusters, art-house classics and live performance screenings.

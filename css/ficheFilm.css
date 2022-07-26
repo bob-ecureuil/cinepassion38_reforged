@@ -1,0 +1,80 @@
+/* ======================================================================================================
+ * feuille de style		: ficheFilm.css
+ * objectif(s)			: gérer le css les fiches pour les films
+ * auteur				: Thomas GRAULLE
+ * date de création		: 19/11/18
+ * date de création		: november 2018
+ * date de modification : date	-> comment faire -- qui à fait
+ * ======================================================================================================
+ */
+
+ :root {
+	--heightCellule: 240px;
+	--widthCellule: 194px;
+}
+
+/*// ===============================================================================================================*/
+/*// Actor part  */
+/*// ===============================================================================================================*/
+
+.acteurs {
+    float: left;
+    position: relative;
+    border: solid 1px black;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    width: var(--widthCellule);
+   	height: var(--heightCellule);
+}
+
+.acteurs .descriptionPerso {
+    font-size: 15px;
+    top: 5px;
+    position: absolute;
+    left: 110px;
+	width: 100px;
+}
+
+.acteurs .descriptionFilm {
+    font-size: 14px;
+    position: absolute;
+    top: 150px;
+    left: 4px;
+    width: 220px;
+    padding-left: 3px;
+    padding-right: 3px;
+    z-index: 1;
+}
+
+.acteurs .photo img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: auto;
+    height: 130px;
+    border-radius: 10px 0 10px 0;
+    z-index: 2;
+}
+
+img.ZoomEffect {
+    -webkit-transition: height 2000ms, opacity 2000ms;
+    -moz-transition: height 2000ms, opacity 2000ms;
+    -ms-transition: height 2000ms, opacity 2000ms;
+    -o-transition: height 2000ms, opacity 2000ms;
+    transition: height 2000ms, opacity 2000ms;
+    opacity: 0.8;
+}
+
+img.ZoomEffect:hover {
+    height: 270px;
+    width: auto;
+    opacity: 1;
+}
+
+/*// ===============================================================================================================*/
+/*// text */
+/*// ===============================================================================================================*/
+
+

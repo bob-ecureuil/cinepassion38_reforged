@@ -1,0 +1,5 @@
+======================================================
+   Titre : Les statistiques de notre cinémathèque
+======================================================
+Le nombre de films par année : retrouver les films de notre cinémathèque répartis par année de sortie.
+Le nombre de films par genre : retrouver en un clin d'œil le nombre films de notre cinémathèque par genre.

@@ -1,0 +1,14 @@
+/* ======================================================================================================
+ * feuille de style		: other.css
+ * objectif(s)			: gère tout les cas un peu particulier du css, par exemple cacher un element
+ * auteur				: Thomas GRAULLE
+ * date de création		: 28/03/19 23:23:23 (Oo)
+ * date de création		: Mars 2019
+ * date de modification :
+ * ======================================================================================================
+ */
+
+.hiddenElement {
+    visibility: hidden;
+    display: none;
+}

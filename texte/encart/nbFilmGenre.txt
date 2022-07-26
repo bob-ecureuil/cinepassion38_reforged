@@ -1,0 +1,5 @@
+======================================================
+   Titre : le nombre de films par genre
+======================================================
+Tous nos films sont ici regroupés en fonction de leur genre cinématographique (comédie, science-fiction, thriller, aventure, ...).
+Vous pouvez ainsi avoir un aperçu rapide de la diversité des films que nous vous proposons.

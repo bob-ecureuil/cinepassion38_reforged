@@ -1,0 +1,138 @@
+/* ======================================================================================================
+ * feuille de style		: menu.css
+ * objectif(s)			: positionnement et mise en forme du menu déroulant horizontal
+ * auteur 				: Christophe Goidin <christophe.goidin@ac-grenoble.fr>
+ * date de création		: juin 2012
+ * date de modification : juillet 2013 	-> gestion de la transition (CSS3)
+ *						: août 2013		-> activation des liens
+ *						: juin 2017		-> modification du nom de certaines classes suite à la refonte full object MVC du site
+ * ======================================================================================================
+ */
+
+/* ======================================================================================================= 
+   élements communs aux 3 menus : niveau 1, niveau 2 et niveau 3 
+   ======================================================================================================= */
+div#menu ul {
+	list-style-type: none;
+	margin: 0 0 0 0;
+	padding-left : 0;
+	text-align: center;
+	z-index:11;  		/* pour que les listes à puces apparaissent au premier plan */
+}
+
+div#menu ul li {
+	transition-property: background-color;
+	transition-duration: 0.4s;
+}
+
+/* ======================================================================================================= 
+   liens hypertextes des 3 menus : niveau 1, niveau 2 et niveau 3 
+   ======================================================================================================= */
+div#menu ul.nv1 li a,
+div#menu ul.nv1 li:hover ul.nv2 li a,
+div#menu ul.nv1 li:hover ul.nv2 li:hover ul.nv3 li a {	/* A TESTER : div#menu a */
+	display: block;
+	text-decoration: none;
+	color: var(--couleurTexte);	
+}
+
+/* ======================================================================================================= 
+   liens hypertextes des 3 menus au survol de la souris : niveau 1, niveau 2 et niveau 3
+   ======================================================================================================= */
+div#menu ul.nv1 li:hover a,
+div#menu ul.nv1 li:hover ul.nv2 li:hover a,
+div#menu ul.nv1 li:hover ul.nv2 li:hover ul.nv3 li:hover a {
+	color: black;
+}
+
+/* ======================================================================================================= 
+   liens hypertextes des 3 menus à l'activation de la souris : niveau 1, niveau 2 et niveau 3
+   ======================================================================================================= */
+div#menu ul.nv1 li:active a,
+div#menu ul.nv1 li:hover ul.nv2 li:active a,
+div#menu ul.nv1 li:hover ul.nv2 li:hover ul.nv3 li:active a {
+	color: white;
+}
+
+/* ======================================================================================================= 
+   items <li> au survol de la souris : niveau 1, niveau 2 et niveau 3 
+   ======================================================================================================= */
+div#menu li#accueil:hover,
+div#menu li:hover,
+div#menu ul.nv1 ul.nv2 li:hover,
+div#menu ul.nv1 ul.nv2 ul.nv3 li:hover {
+	background-color: var(--couleurNiveau2); 
+}
+
+/* ======================================================================================================= 
+   liste à puces de niveau 1
+   ======================================================================================================= */
+div#menu ul.nv1 li {
+	position: relative; /* afin de positionner les sous menu (niveau 2) par rapport aux <li> de niveau 1 */
+	float: left;
+	width: 150px;
+	line-height: 25px;
+	border-top: none;
+	border-right: 1px solid var(--couleurNiveau3);
+	border-bottom: 1px solid var(--couleurNiveau3);  /* la bordure gauche est positionnée dans li#accueil */
+	background-color: var(--couleurNiveau1);
+}
+
+div#menu ul.nv1 li#accueil {
+	width: 50px;
+	border-left: 1px solid var(--couleurNiveau3);
+	background-image: url("../image/divers/accueilInactif.png");	/* l'adressage des fichiers s'effectue à partir du dossier css */
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+div#menu ul.nv1 li#accueil:hover {
+	background-image: url("../image/divers/accueilActif.png");		/* l'adressage des fichiers s'effectue à partir du dossier css */
+}
+
+/* ======================================================================================================= 
+   liste à puces de niveau 2 
+   ======================================================================================================= */
+div#menu ul ul {	/* valable aussi pour la liste à puces de niveau 3 */
+	display: none;
+}
+
+div#menu ul.nv1 li.plus:hover ul.nv2 {
+	position: absolute;	/* positionné par rapport au dernier bloc parent positionné -> les <li> du menu de niveau 1 positionnés de manière relative */
+	display: block;
+	top: 26px;
+	left: -1px;			/* à cause de la bordure gauche des <li> de niveau 1 */
+}
+
+div#menu ul.nv1 ul.nv2 li {
+	border-top: none;
+	border-right: 1px solid var(--couleurNiveau3);
+	border-bottom: 1px solid var(--couleurNiveau3);
+	border-left: 1px solid var(--couleurNiveau3);
+	background-color: var(--couleurNiveau1);
+}
+
+div#menu ul.nv1 ul.nv2 li.plus:hover {
+	background-image: url(../image/divers/menuDeroulant.png);		/* l'adressage des fichiers s'effectue à partir du dossier css */
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+/* ======================================================================================================= 
+   liste à puces de niveau 3 
+   ======================================================================================================= */
+div#menu ul.nv1 li.plus:hover ul.nv2 li.plus:hover ul.nv3 {
+	position: absolute;		/* positionné par rapport au dernier bloc parent positionné -> les <li> du menu de niveau 2 positionnés de manière absolue */
+	top: -1px;				/* à cause de la bordure haute des <li> de niveau 2 */
+	left: 150px;
+	display: block;
+	border-top: 1px solid var(--couleurNiveau3);
+}
+
+div#menu ul.nv1 ul.nv2 ul.nv3 li {
+	border-top: none;
+	border-right: 1px solid var(--couleurNiveau3);
+	border-bottom: 1px solid var(--couleurNiveau3);
+	border-left: 1px solid var(--couleurNiveau3);
+	background-color: var(--couleurNiveau1);
+}

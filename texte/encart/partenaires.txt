@@ -1,0 +1,7 @@
+======================================================
+   Titre : nos Partenaires
+======================================================
+Nos principaux partenaires actuels sont les suivants :
+*<a onclick='window.open(this.href); return false;' href='http://www.allocine.fr'>allocine.fr</a>
+*<a onclick='window.open(this.href); return false;' href='http://www.empirecinemas.co.uk'>empire</a>
+*<a onclick='window.open(this.href); return false;' href='http://www.sky.com/tv/channel/skycinema'>skyMovies</a>

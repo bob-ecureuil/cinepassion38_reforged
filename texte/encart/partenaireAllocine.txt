@@ -1,0 +1,7 @@
+======================================================
+   Titre : <a onclick='window.open(this.href); return false;' href='http://www.allocine.fr'><img src='./image/partenaire/logoAllocine.png' alt='allocine' width='100%' /></a>
+======================================================
+Offrir aux cinéphiles une source pratique et rapide d'informations sur le cinéma, tout en facilitant l'accès aux salles, c'est la mission d'AlloCiné.
+AlloCiné peut être joint 24h/24 en quelques secondes par téléphone au numéro 0.892.892.892 *, sur Internet (<a onclick='window.open(this.href); return false;' href='http://www.allocine.fr'>www.allocine.fr</a>) ou votre smartphone et votre tablette.
+Si vous avez des questions relatives à l'achat de billets, n'hésitez pas à nous écrire à adm@allocine.fr.
+Pour toutes autres questions ou remarques, écrivez-nous à info@allocine.fr.

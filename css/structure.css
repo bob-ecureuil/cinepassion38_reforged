@@ -1,0 +1,494 @@
+/* ======================================================================================================
+ * feuille de style		: structure.css
+ * objectif(s)			: découpage, positionnement et mise en forme des différents blocs du site web
+ * auteur				: Christophe Goidin <christophe.goidin@ac-grenoble.fr>
+ * date de création		: juin 2012
+ * date de modification : juillet 2013	-> balise html, blocs AVEC et SANS encarts
+ *						  juin 2017		-> renommage de certains blocs (respect du "lower camel case")
+ *										-> utilisation de "variables"
+ * ======================================================================================================
+ */
+ 
+/* ======================================================================================================= 
+   définition des "variables"
+   ======================================================================================================= */
+:root {
+  --couleurNiveau1: 	#F2F4F4; /*#EEEEF3;*/
+  --couleurNiveau2: 	#D4D6DA;
+  --couleurNiveau3: 	#7F8691;
+  --couleurNiveau4: 	#404360;
+  --couleurBordure:		#C9C5C2;
+  --couleurTexte: 		#404040;
+  --couleurTexteClair: 	#A2A2A2;
+  --largeurBloc: 		98%;
+}
+
+/* ======================================================================================================= 
+   paramétrage commun à tout le site
+   ======================================================================================================= */
+html {
+	overflow-y: scroll;	/* ajout automatique d'un ascenseur vertical pour éviter un effet graphique désagréable */ 
+	overflow-x: auto;
+}
+
+body {
+	text-align: justify;
+	font: normal normal normal medium serif;
+	color: #404040;
+	background-image: linear-gradient(bottom, rgb(255,255,255) 29%, rgb(20,20,36) 86%);
+	background-image: -o-linear-gradient(bottom, rgb(255,255,255) 29%, rgb(20,20,36) 86%);
+	background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 29%, rgb(20,20,36) 86%);
+	background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 29%, rgb(20,20,36) 86%);
+	background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 29%, rgb(20,20,36) 86%);
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.29, rgb(255,255,255)),color-stop(0.86, rgb(20,20,36)));
+}
+
+ul {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;		/* les liens auront la même couleur que le texte de leur bloc conteneur */
+}
+
+.centrer {
+	display: block;
+	text-align: center;
+}
+
+.souligne {
+	text-decoration: underline;
+}
+
+.italique {
+	font-style: italic
+}
+
+img.logoPartenaire {
+	width: 200px;
+	height: auto;
+}
+
+/* ======================================================================================================= 
+   image fixe
+   ======================================================================================================= */
+div#llm {
+	position: fixed;
+	top: 250px;
+	left: 1345px;
+	width: auto;
+}
+
+/* ======================================================================================================= 
+   image permettant de remonter en haut de la page 
+   ======================================================================================================= */
+img#retourHautPage {
+	position: fixed;
+	visibility: hidden;
+	right: 37px;
+	bottom: 100px;
+	z-index: 100;
+}
+
+/* ======================================================================================================= 
+   liens 
+   ======================================================================================================= */
+div#lien {
+ 	position: relative;	/* top: 0px; */
+	margin: 10px auto 0 auto;
+	padding-right: 20px;
+	width: var(--largeurBloc);
+	height: auto;
+	text-align: right;
+	color: white;
+}
+
+/* ======================================================================================================= 
+   header (ou bandeau haut)
+   ======================================================================================================= */
+div#header {
+	position: relative;	/* top: 0px; */
+	margin: 0 auto 0 auto;
+	padding: 10px 10px 5px 10px;
+	width: var(--largeurBloc);
+	height: auto;
+	border-top: 1px solid var(--couleurBordure);	/* bien sans aussi !!! */
+	border-right: 1px solid var(--couleurBordure);
+	border-bottom: none;
+	border-left: 1px solid var(--couleurBordure);
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	background-color: var(--couleurNiveau3);
+	z-index: 1;
+}
+
+div#header img#cinepassion38 {
+	position: absolute;
+	top: 50px;
+	left: 42%;
+	z-index: 2;		/* facultatif */
+}
+
+div#header div#authentification {
+	position: absolute;
+	display: block;
+	top: 25px;
+	left: 20px;
+	padding: 0;
+	width: 100px;
+	border: none;
+	color: white;
+}
+
+div#header div#authentification span.spanForm {
+	display: block ruby ;
+}
+
+#authentification span.speudo {
+	display: ruby;
+}
+
+div#header div#titre {
+	position: absolute;
+	top: 210px;
+	left: 50%; 	/* texte centré par rapport à la page */
+	width: auto;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-family: "Comic Sans MS";
+}
+
+div#header div#filAriane {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+	width: calc(var(--largeurBloc) - 5%);
+	text-align: left;
+	color: White;
+	z-index: 2;		/* facultatif */
+}
+
+div#header div#filAriane a:hover {
+	text-decoration: underline;
+}
+
+div#header div#version {
+	position: absolute;
+	top: 15px;
+	right: 25px;
+	text-align: right;
+	color: White;
+	z-index: 2;		/* facultatif */
+}
+
+div#header div#dateDuJour {
+	position: absolute;
+	top: 35px;
+	right: 25px;
+	width: 300px;
+	text-align: right;
+	color: White;
+	opacity: 0.5;
+	z-index: 2;		/* facultatif */
+}
+
+div#header img#fondHeader {
+	border-radius: 10px;
+	width: 100%;
+}
+
+/* ======================================================================================================= 
+   menu : la mise en forme du menu est décrite dans le fichier menu.css
+   ======================================================================================================= */
+div#menu {
+	position: relative;	/* top: 0px; */
+	margin: 0 auto 0 auto;
+	padding: 0 10px 0 10px;
+	width: var(--largeurBloc);
+	height: 27px;
+	border-top: none;
+	border-right: 1px solid var(--couleurBordure);
+	border-bottom: none;
+	border-left: 1px solid var(--couleurBordure);
+	background-color: white;
+}
+
+/* ======================================================================================================= 
+   contenu principal : bloc "main"
+   ======================================================================================================= */
+div#main {
+	position: relative;	/* top: 0px; */
+	margin-right: auto;
+	margin-left: auto;
+	padding : 10px 10px 20px 10px;
+	width: var(--largeurBloc);
+	height: auto;
+	border-top: none;
+	border-right: 1px solid var(--couleurBordure);
+	border-bottom: none;
+	border-left: 1px solid var(--couleurBordure);
+	background-color: White;
+}
+
+div#main span#titreMain {
+	display: block;
+	width: 80%;
+	margin-bottom: 10px;
+	background-image: linear-gradient(60deg, var(--couleurNiveau1), white);  /* #D4D6DA*/
+	color: black;
+	padding: 5px 0 5px 5px;
+	border-left: 1px solid var(--couleurBordure);
+}
+
+div#main div#content1 {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0 0 0 0;
+	background-color: inherit;
+}
+
+div#main div#content1 div#blocDroite {
+	position: absolute;		/* positionné par rapport à son conteneur : content1 */
+	width: 518px;
+	top: 0;
+	left: 50%;
+	padding: 5px 10px 10px 10px;
+	/*border-radius: 10px;*/
+	border: 1px solid var(--couleurBordure);
+	background-color: var(--couleurNiveau1);
+	margin: 0 0 0 0;
+}
+
+div#main div#content1 div#blocDroite span.titre {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bolder;
+	text-align: center;
+	color: inherit;
+	background-color: inherit;
+}
+
+div#main hr.marge {
+	visibility: hidden;
+	margin-bottom: 10px;
+	height: 0;
+	width: 100%;
+}
+
+div#main div[id^=encarts] {		/* toutes les balises <div> dont l'id commence par "encarts" */
+	padding: 0 0 0 0;
+	width: 200px;
+	background-color: inherit;
+}
+div#main div#encartsGauche {
+	float: left;
+	margin-right: 10px;
+}
+
+div#main div#encartsDroite {
+	float: right;
+	margin-left: 10px;
+}
+
+div#main div#content2 {			/* occupe toute la largeur restante */
+	overflow: auto;				/* pour que TOUT le bloc épouse le contour des blocs flottants, et pas simplement le contenu du bloc */
+	padding: 0 0 0 0;
+	background-color: inherit;
+}
+
+div#main div#content2 span.contentTitre {
+	display: block;
+	margin-bottom: 10px;
+	text-align: left;
+	font-weight: bolder;
+	color: var(--couleurNiveau4);
+}
+
+div#main div#content2 span.contentInfos {
+	display: block;
+	margin-bottom: 30px;
+	text-align: justify;
+	color: inherit;
+}
+
+div#main hr {					/* indispensable afin que la suite du contenu de la page soit positionné en dessous du bloc flottant le plus bas (-> le plus grand) */
+	clear: both;
+	visibility: hidden;
+	margin: 0 0 0 0;
+	height: 2px;
+	width: 50%;
+}
+
+/* ======================================================================================================= 
+   encart 
+   ======================================================================================================= */
+div#main div[id^=encarts] div.unEncart { /* toutes les balises <div> dont l'id commence par "encarts" */
+	position: relative;
+	margin: 0 0 10px 0;
+	padding: 5px 5px 5px 5px;
+	width: auto;
+	height: auto;
+	background-color: var(--couleurNiveau1);
+	border: 1px solid var(--couleurNiveau2);
+	transition-property: background-color, color, border-color;
+	transition-duration: 3.0s;
+}
+
+div#main div[id^=encarts] div.unEncart:hover {
+	color: black;
+	background-color: var(--couleurNiveau2);
+	border-color: var(--couleurNiveau3);
+}
+
+div#main div[id^=encarts] div.unEncart span.centrer {
+	width: 140px;
+	margin: 0 auto 0 auto;
+}
+
+div#main div[id^=encarts] div.unEncart span.titre {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bolder;
+	text-align: center;
+	color: var(--couleurNiveau4);
+	background-color: var(--couleurNiveau2);
+	border: 1px solid var(--couleurNiveau2);
+	transition-property: background-color, color, border;
+	transition-duration: 3.0s;
+}
+
+div#main div[id^=encarts] div.unEncart:hover span.titre {  /* mise en forme du titre lors du survol de l'encart */
+	color: black;
+	background-color: var(--couleurNiveau1);
+	border: 1px solid white;
+}
+
+/* ======================================================================================================= 
+   plan du site 
+   ======================================================================================================= */
+div#planSite {
+	position: relative; /* top: 0px; */
+	margin: 0 auto 0 auto;
+	padding: 0 10px 10px 10px;
+	width: var(--largeurBloc);
+	height: auto;
+	border-top:1px solid var(--couleurBordure);
+	border-right: 1px solid var(--couleurBordure);
+	border-bottom: none;
+	border-left: 1px solid var(--couleurBordure);
+	background-color: var(--couleurNiveau1);
+	color: var(--couleurTexteClair);
+}
+
+div#planSite div[class^=bloc] {	/* les blocs colGauche, colDroite et colCentre */
+	padding : 10px 10px 10px 10px;
+	background-color: var(--couleurNiveau1); /*#F0F0F0;*/
+}
+
+div#planSite div.blocGauche {
+	float: left;
+	width: 210px;
+}
+
+div#planSite div.blocDroite {
+	float: right;
+	width: 210px;
+}
+
+div#planSite div.blocCentre {	/* occupe toute la largeur restante */
+	overflow: auto;				/* pour que TOUT le bloc épouse le contour des blocs flottants, et pas simplement le contenu du bloc */
+	
+}
+
+div#planSite hr {				/* indispensable afin que la suite du contenu de la page soit positionné en dessous du bloc flottant le plus bas (-> le plus grand) */
+	clear: both;
+	visibility: hidden;
+	margin: 0 0 0 0;
+	height: 2px;
+	width: 100%;
+}
+
+div#planSite ul {
+	margin-top: 0;
+	padding-left: 15px; 		/* car les blocs <PiedCol...> ont une marge gauche de 10px et elle n'est pas prise en compte -> sinon <ul> "déborde" du bloc */
+}
+
+div#planSite ul li {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+div#planSite ul li:hover {
+	color: var(--couleurTexte);	/* changement de la couleur du symbole de la liste à puce. Couleur identique au lien hypertexte */
+	
+}
+
+div#planSite ul li a {
+	display: block;
+	padding-left: 5px;
+}
+
+div#planSite ul li a:hover {
+	color: var(--couleurTexte);
+	background-image: linear-gradient(60deg, #D4D6DA, #EEEEF3);
+}
+
+div#planSite ul li a:active {
+	color: white;
+}
+
+/* ======================================================================================================= 
+   footer 
+   ======================================================================================================= */
+div#footer {
+	position: relative; 	/* top: 0px; */
+	margin: 0 auto 0 auto;
+	padding: 0 0 0 0;
+	width: 1170px;			/* 1150px + 20px car les marges internes à droite et à gauche ont été supprimées */
+	height: 40px;			/* car l'image footer.jpg a une hauteur de 40px */
+	border-top: 1px solid var(--couleurBordure);
+	border-right: 1px solid var(--couleurBordure);
+	border-bottom: 1px solid var(--couleurBordure);
+	border-left: 1px solid var(--couleurBordure);
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	text-align: center;
+}
+
+div#footer img#fondFooter {
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+div#footer img#cinepassion38LogoMini {
+	position: absolute;
+	top: 5px;
+	left: 8px;
+	z-index: 3;
+}
+
+div#footer div#w3c {
+	position: absolute;
+	top: 12px;				/* pour que les images soient centrées verticalement : hauteur du bloc 40px, hauteur de l'image : 16px => (40-16)/2=12 */
+	left: 535px;			/* pour que les images soient centrées horizontalement : largeur du bloc 1170px, largeur d'une image : 42px, espacement entre les images : 16px (4 espaces) => (1170-(2*42)-16)/2 = 535 */
+	z-index: 2;				/* facultatif */
+}
+
+/* ======================================================================================================= 
+   copyright 
+   ======================================================================================================= */
+div#copyright {
+	position: relative;		/* top: 0px; */
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 100px;	/* afin d'éviter que le dégradé de couleurs de la page recommence si la hauteur de la page est petite */
+	width: var(--largeurBloc);
+	height: auto;
+	text-align: center;
+	color: var(--couleurTexteClair);
+}
+

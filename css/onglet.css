@@ -1,0 +1,82 @@
+/* ======================================================================================================
+ * feuille de style		: onglet.css
+ * objectif(s)			: gérer le css pour les onglets
+ * auteur				: Thomas GRAULLE
+ * date de création		: 19/11/18
+ * date de création		: november 2018
+ * date de modification : 25/11/18	-> Create the navigation bar -- Thomas Graulle
+ * date de modification : datedate	-> comment faire -- qui à fait
+ * ======================================================================================================
+ */
+ 
+:root {
+	--lDisponible: calc( 100% - 180px - 210px - 10px);
+}
+
+#contentFiche {
+	position: absolute;
+    top: 0;
+    left: 180px;
+    margin-top: 46px !important;
+    width: var(--lDisponible);
+    height: auto;
+}
+
+#fiche {
+
+}
+
+#fiche #navigation{
+}
+
+#fiche #bar {
+
+}
+
+#fiche #bar .elementBar {
+    display: inline-block;
+    padding: 5px;
+	width: fit-content;
+    margin-left: 10px;
+    margin-bottom: -1px;
+    border: 1px solid #004b23;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#fiche #bar .enable {
+    background-color: #FFFF;
+}
+
+#fiche #bar .disable {
+    background-color: rgba(0, 75, 35, 0.3);
+}
+
+#fiche #bar .elementBar:hover {
+    background-color: rgba(0, 75, 35, 0.2);
+}
+
+#fiche #bar .elementBar:active {
+    background-color: rgba(0, 75, 35, 0.1);
+}
+
+
+#fiche #dataFiche {
+    margin-top: 0;
+    border-top: solid 1px #004b23;
+    background-color: rgba(232, 255, 223, 0.3);
+}
+
+.center {
+    text-align: center;
+}
+
+
+#affiche {
+	display: inline-block;
+}
+
+#dataFiche {
+	width: 100%;
+    display: inline-block;
+}

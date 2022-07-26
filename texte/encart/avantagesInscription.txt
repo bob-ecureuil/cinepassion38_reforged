@@ -1,0 +1,5 @@
+======================================================
+   Titre : inscription
+======================================================
+L'inscription sur notre site vous offre la possibilité d'évaluer et de noter les films présents dans notre cinémathèque. Vous avez aussi la possibilité de poster des commentaires pour chacun des films présents.
+D'autres fonctionnalités seront bientôt opérationnelles et accessibles aux membres inscrits sur notre site internet...

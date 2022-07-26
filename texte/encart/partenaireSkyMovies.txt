@@ -1,0 +1,5 @@
+======================================================
+   Titre : <a onclick='window.open(this.href); return false;' href='http://www.sky.com/tv/channel/skycinema'><img src='./image/partenaire/logoSkyMovies.png' alt='skyMovies' width='100%' /></a>
+======================================================
+We make life better by entertaining and connecting people.
+At Sky, we’re at the heart of millions of lives, in millions of homes. This gives us a platform to effect real change. What we choose to do with this platform says everything about who we are. That’s why we aim for something better. That’s why we use our voice to inspire, create and act.
