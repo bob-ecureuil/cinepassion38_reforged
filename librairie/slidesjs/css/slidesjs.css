@@ -1,0 +1,128 @@
+#container {
+	width:570px;
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+	position:relative;
+	left: 0;
+	z-index:0;
+	border: none;
+}
+
+#example {
+	width:570px;
+	padding:0 0 0 0;
+	margin:0 auto 0;
+	height: 300px;
+	position:relative;
+	border: none;
+}
+
+
+/*
+	Slideshow
+*/
+
+#slides {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100;
+	margin: 0 0 0 0;
+	border: none;
+}
+
+/* ========================================================================================================
+	Slides container : le "conteneur" des diapositives
+   ========================================================================================================*/
+.slides_container {
+	width:570px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+	border: none;
+}
+
+.slides_container p {	/* le texte qui s'affiche dans le bandeau (en bas de l'image) */
+	margin: 0 0 0 0;
+}
+
+/* ========================================================================================================
+	Each slide - les diapositives
+   ========================================================================================================*/
+.slides_container div.slide {
+	width:570px;
+	height:270px;
+	display:block;
+}
+
+/* ========================================================================================================
+	Next/prev buttons
+   ========================================================================================================*/
+div#slides .prev, div#slides .next {
+	position:absolute;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+div#slides .prev {
+	top: 50px;
+	left: 580px;
+}
+
+div#slides .next {
+	top: -1px;
+	left: 580px;
+}
+
+
+/* ========================================================================================================
+	Pagination : les "diodes" qui indiquent l'image sélectionnée 
+   ========================================================================================================*/
+.pagination {
+	margin: 10px auto 0 auto;
+	width:200px;
+	/*border: thin solid green;*/
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../img/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+/* ========================================================================================================
+	le texte dans le bandeau (positionné en bas de l'image)
+   ========================================================================================================*/
+.caption {
+	z-index: 500;
+	position: absolute;
+	bottom: -35px;
+	left: 0;
+	height: 30px;
+	padding: 5px 20px 0 12px;
+	background: rgba(0,0,0,.6);	/* noir avec gestion de la transparence */
+	width: 100%;
+	font-size: inherit;
+	line-height: 1.33;
+	color: white;
+	border-top: none;/*1px solid black;*/
+	text-shadow: none;				/* pas d'ombre */
+}
+

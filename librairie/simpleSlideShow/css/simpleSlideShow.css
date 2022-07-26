@@ -1,0 +1,31 @@
+
+#slideshow {
+    position: relative;
+    height: 210px;
+	width: 165px;
+	float: left;
+
+}
+
+#slideshow div {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow div.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow div.last-active {
+    z-index: 9;
+}
+
+#slideshow DIV IMG {
+    display: block;
+    border: 0;
+}
+
